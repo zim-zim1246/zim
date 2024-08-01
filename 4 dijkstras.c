@@ -37,7 +37,7 @@ int main() {
     printf("Enter the number of vertices: \n");
     scanf("%d", &n);
 
-    printf("Enter the cost matrix (use 999 for no direct path): \n");
+    printf("Enter the cost matrix : \n");
     for (i = 0; i < n; i++) {
         for (j = 0; j < n; j++) {
             scanf("%d", &cost[i][j]);
