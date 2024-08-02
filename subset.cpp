@@ -38,7 +38,8 @@ int main() {
     
     if (sum < d) {
         printf("No subset possible\n");
-    } else {
+    } else
+    {
         sos(0, 0, sum);
         if (count == 0)
             printf("No subset possible\n");
