@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-
 int place(int x[], int k) {
     int i;
     for (i = 1; i < k; i++) {
@@ -10,7 +9,6 @@ int place(int x[], int k) {
     }
     return 1;
 }
-
 int nqueens(int n) {
     int x[10], k, count = 0, i, j;
     k = 1;
@@ -39,7 +37,6 @@ int nqueens(int n) {
     }
     return count;
 }
-
 int main() {
     int n, res;
     printf("Enter the size of chess board: ");
