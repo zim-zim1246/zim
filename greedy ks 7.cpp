@@ -29,20 +29,15 @@ int main() {
     printf("Enter the no. of objects: ");
     scanf("%d", &n);
     float* p, * w;
-
     p = (float*)malloc(n * sizeof(float));
     w = (float*)malloc(n * sizeof(float));
-
     printf("Enter the capacity: ");
     scanf("%d", &m);
-
     printf("Enter the profit of %d items: ", n);
     for (int i = 0;i < n;i++)
         scanf("%f", &p[i]);
-
     printf("Enter the weight of %d items: ", n);
     for (int i = 0;i < n;i++)
         scanf("%f", &w[i]);
-
     greedy_ks(n, m, p, w);
 }
