@@ -1,10 +1,8 @@
 #include<stdio.h>
-
 void prims(int n, int s, int cost[][10]) {
     int i, j, a, b, min, total_cost = 0, edge_count = 0;
     int tree_vertex[10] = { 0 };
     tree_vertex[s] = 1;
-
     while (edge_count < n - 1) {
         min = 999;
         for (i = 0; i < n; i++) {
@@ -25,7 +23,6 @@ void prims(int n, int s, int cost[][10]) {
     }
     printf("Min cost= %d\n", total_cost);
 }
-
 int main() {
     int n, s, cost[10][10];
     printf("Enter the no.of vertices: ");
