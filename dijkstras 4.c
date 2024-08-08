@@ -22,7 +22,6 @@ void dijkstras(int n, int s, int cost[][10]) {
             }
         }
     }
-
     printf("Shortest path from source vertex %d:\n", s);
     for (v = 0; v < n; v++) {
         printf("%d to %d = %d\n", s, v, dist[v]);
@@ -44,4 +43,3 @@ int main() {
     dijkstras(n, s, cost);
     return 0;
 }
-
