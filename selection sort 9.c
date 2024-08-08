@@ -1,8 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
 int count = 0;
-
 void SelectionSort(int arr[], int n) {
     int i, j, pos, temp;
     for (i = 0; i < n - 1; i++) {
@@ -20,7 +18,6 @@ void SelectionSort(int arr[], int n) {
         }
     }
 }
-
 int main() {
     int* A, n, i;
     printf("Enter the value of N: ");
@@ -34,5 +31,4 @@ int main() {
         printf("%d ", A[i]);
     printf("\nBasic Operation Count= %d\n", count);
     free(A);
-
 }
