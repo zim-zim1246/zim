@@ -22,7 +22,6 @@ int main() {
     int sum = 0, n, i;
     printf("Enter the number of elements: ");
     scanf("%d", &n);
-    
     printf("Enter the elements in increasing order: ");
     for (i = 0; i < n; i++) {
         scanf("%d", &w[i]);
@@ -39,4 +38,3 @@ int main() {
     }
     return 0;
 }
-
