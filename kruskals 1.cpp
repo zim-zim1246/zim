@@ -1,10 +1,8 @@
 #include<stdio.h>   
 void kruskal(int cost[][10], int n) {
     int par[n + 1], a, b, u, v, i, j, min, mincost = 0, ec = 0;
-
     for (i = 1; i <= n; i++)
         par[i] = -1;
-
     while (ec < n - 1) {
         min = 999;
         for (i = 1; i <= n; i++)
@@ -18,7 +16,6 @@ void kruskal(int cost[][10], int n) {
             u = par[u];
         while (par[v] > 0)
             v = par[v];
-
         if (u != v) {
             printf("edge from %d to  %d with cost %d is selected\n", a, b, min);
             mincost += min;
@@ -33,7 +30,6 @@ int main() {
     int n, cost[10][10], i, j;
     printf("Enter the number of vertices: ");
     scanf("%d", &n);
-
     printf("Enter the cost matrix:\n");
     for (i = 1; i <= n; i++)
         for (j = 1; j <= n; j++)
